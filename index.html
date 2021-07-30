@@ -1,23 +1,162 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
+    <title>Document</title>
+</head>
+
+<body>
     <header>
-      <nav class="navbar">
-        <div class="navbar__brand">
-           <img src="assets/logo.png" alt="logo" class="navbar__logo">
-        </div>
-        <div class="navbar__nav__items">
-          <button class="nav__item">Order Food</button>
-        </div>
-      </nav>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="assets/logo.png" alt="logo" class="navbar__logo">
+            </div>
+            <div class="navbar__button__primarys">
+                <button class="button__primary">Order Food</button>
+            </div>
+        </nav>
     </header>
-  </body>
+    <main class="container">
+        <!-- First section -->
+        <section class="first__section__container">
+            <div class="first__section__image__container">
+                <img src="assets/hero.jpg" alt="Hero image" class="first__section__image">
+                <img src="assets/svg/heroShape.svg" alt="backround2" class="first__section__image__background__one">
+                <img src="assets/svg/herobgpattren.svg" alt="backround1" class="first__section__image__background__two">
+            </div>
+            <div class="first__section__discription">
+                <h1 class="first__section__text">
+                    Order food from favourite restaurants near you
+                </h1>
+                <button class="button__primary">Order Now</button>
+            </div>
+        </section>
+        <!-- video section -->
+        <section class="video__section">
+            <div class="video__container">
+                <video class="video__tag" controls>
+                    <source src="assets/video/Shots of Different Food.mp4" type="video/mp4" class="video">
+                </video>
+                <div class="video__background">
+                </div>
+            </div>
+            <p class="video__text">Your food will be prepared safely with an experienced chef, without compromising on the quality and hygiene.</p>
+        </section>
+        <!-- Explore Menu -->
+        <section class="explore__menu__container">
+            <h1 class="explore__menu__text">Explore Our Menu</h1>
+            <div class="explore__menu__gradiant__bg">
+            </div>
+            <div class="explore__menu__list">
+                <!--Burger-->
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                        <img src="assets/burger.jpg" alt="burger" class="food__image">
+                    </div>
+                    <div class="food__card__discription">
+                        <h3 class="food__title">Burgers</h3>
+                        <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56">+3</span></p>
+                    </div>
+                </div>
+                <br>
+                <!--Pizaa-->
+                <div class="food__card" id="pizza__card">
+                    <div class="food__card__image__container">
+                        <img src="assets/pizza.jpg" alt="burger" class="food__image">
+                    </div>
+                    <div class="food__card__discription">
+                        <h3 class="food__title">Burgers</h3>
+                        <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56">+3</span></p>
+                    </div>
+                </div>
+                <br>
+                <!--Ice Cream-->
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                        <img src="assets/iceCream.jpg" alt="burger" class="food__image">
+                    </div>
+                    <div class="food__card__discription">
+                        <h3 class="food__title">Burgers</h3>
+                        <p>Burger King, Mcdonalds, Burger Place <span style="color: #d83a56">+3</span></p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="view__more__button__container">
+                <button class="view__more__button">View more</button>
+            </div>
+        </section>
+        <!--restaurants-->
+
+        <section class="restaurant__list">
+            <div class="restaurant__list__heading__container">
+                <h1 class="restaurant__list__heading">Order From 100s Of restaurants</h1>
+            </div>
+            <div class="restaurant__list__images">
+                <div class="restaurant__list__images__container__one">
+                    <div class="restaurant__image__one__container">
+                        <img src="assets/restaurant1.jpg" alt="restaurant1" class="restaurant__image__one">
+                    </div>
+                    <div class="restaurant__image__two__container">
+                        <img src="assets/restaurant2.jpg" alt="restaurant2" class="restaurant__image__two">
+                    </div>
+                </div>
+                <div class="restaurant__list__images__container__two">
+                    <div class="restaurant__images__four__container">
+                        <img src="assets/restaurant4.jpg" alt="restaurant4" class="restaurant__image__four">
+                    </div>
+                    <div class="restaurant__image__three__container">
+                        <img src="assets/restaurant3.jpg" alt="restaurant3" class="restaurant__image__three">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Get Updates form-->
+        <section class="get__updates__container">
+            <div class="get__updates__form__div">
+                <form class="get__updates__form">
+                    <h1 class="Updates__text">Stay Updated</h1>
+                    <input type="email" placeholder="email@email.com" class="email__input">
+                </form>
+            </div>
+            <div class="get__updates">
+                <button class="get__updates__button">Get Updates</button>
+            </div>
+        </section>
+        <!--Quote Section-->
+        <section class="quote__image__section__container">
+            <div class="quote__image__container">
+                <img src="assets/quote-background-image.jpg" class="quote__image">
+                <div class="quote__image__overlay"></div>
+                <h3 class="quote">When a man's stomach is full it makes no diffrence whether he is rich or poor</h3>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer__logo">
+            <img src="assets/logo.png" class="footer__image">
+        </div>
+        <div class="footer__list__container">
+            <ul class="footer__list">
+                <li><a href="#" class="list">Pricing</a></li>
+                <li><a href="#" class="list">Terms and Conditions</a></li>
+                <li><a href="#" class="list">Partnership</a></li>
+                <li><a href="#" class="list">Career</a></li>
+                <li><a href="#" class="list">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer__backround">
+        </div>
+    </footer>
+</body>
+
 </html>
